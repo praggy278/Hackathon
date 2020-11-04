@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-11-04T18:08:58 IST" name="Default suite" finished-at="2020-11-04T18:09:39 IST" duration-ms="41311">
+    <groups>
+    </groups>
+    <test started-at="2020-11-04T18:08:58 IST" name="Default test" finished-at="2020-11-04T18:09:39 IST" duration-ms="41311">
+      <class name="com.tests.TestNG">
+        <test-method is-config="true" signature="selectingBrowser()[pri:0, instance:com.tests.TestNG@696da30b]" started-at="2020-11-04T18:08:58 IST" name="selectingBrowser" finished-at="2020-11-04T18:09:06 IST" duration-ms="8185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectingBrowser -->
+        <test-method signature="getGoogleSignIn()[pri:0, instance:com.tests.TestNG@696da30b]" started-at="2020-11-04T18:09:06 IST" name="getGoogleSignIn" finished-at="2020-11-04T18:09:23 IST" duration-ms="16465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getGoogleSignIn -->
+        <test-method signature="getPopularUsedCars()[pri:0, instance:com.tests.TestNG@696da30b]" started-at="2020-11-04T18:09:23 IST" name="getPopularUsedCars" finished-at="2020-11-04T18:09:29 IST" depends-on-methods="com.tests.TestNG.getGoogleSignIn" duration-ms="6679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPopularUsedCars -->
+        <test-method signature="getUpcomingBikes()[pri:0, instance:com.tests.TestNG@696da30b]" started-at="2020-11-04T18:09:29 IST" name="getUpcomingBikes" finished-at="2020-11-04T18:09:39 IST" depends-on-methods="com.tests.TestNG.getPopularUsedCars" duration-ms="9913" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUpcomingBikes -->
+        <test-method is-config="true" signature="closeBrowser(org.openqa.selenium.WebDriver)[pri:0, instance:com.tests.TestNG@696da30b]" started-at="2020-11-04T18:09:39 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1604493579901" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated closeBrowser.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated closeBrowser.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:437)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:351)
+at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.tests.TestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
